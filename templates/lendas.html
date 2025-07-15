@@ -1,0 +1,179 @@
+{% extends "base.html" %} {% block title %}Nossas Lendas - Saberes da Terra{%
+endblock %} {% block content %}
+<main class="backlendas">
+  <div class="content-section">
+    <div class="container">
+      <h1 class="text-center mb-3 display-5">Galeria de Lendas de Araranguá</h1>
+      <p class="lead text-center mb-5 mx-auto" style="max-width: 700px">
+        Explore a riqueza do nosso folclore. Cada história é um pedaço da alma
+        da nossa cidade, pronta para ser redescoberta.
+      </p>
+
+      <div class="row g-4">
+        <!-- Card de Lenda -->
+        <div class="col-lg-4 col-md-6">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/Boitatá.png') }}"
+              alt="Ilustração do Boitatá"
+              class="card-img-top"
+            />
+            <h4 class="card-title">O Boitatá</h4>
+            <p class="card-text">
+              Era nos tempos antigos, quando as praias de Araranguá ainda eram
+              desertas e os lagos se estendiam terra adentro. Contavam os mais
+              velhos, que antigamente na praia não tinha morros, nem casas, nem
+              pescadores. Mas o que não faltava era mistério... O povo falava de
+              uma coisa estranha que aparecia por lá: o Boitatá. Uns diziam que
+              era como um passarinho muito grande, outros achavam que era um
+              fogo que andava. Ninguém sabia direito. Diziam que ele vinha do
+              farol no Morro dos Conventos, sem fazer barulho nenhum, e de
+              repente soltava fogo em cima de quem estivesse no caminho! Não
+              gritava, não avisava — só aparecia, brilhava no escuro... e dava
+              um medo danado! Muita gente só ouvia falar. Mas o Luís João
+              Pequeno viu de verdade. Ele contou que viu o fogo saindo da praia
+              e subindo até os campos lá de cima. Era rápido, assustador e
+              desaparecia no ar como mágica. Hoje em dia, ninguém vê mais. Mas
+              quem mora por ali ainda escuta a história e se pergunta: — Será
+              que o Boitatá ainda voa por essas bandas quando a noite está bem
+              escura?
+            </p>
+            <p class="reflenda">
+              Referência: ADANS FILHO, Nelson. História Torres Aspectos Vol I e
+              II. Porto Alegre: Editora Edigal, 2021, p. 169-170.
+            </p>
+            <small class="text-success fw-bold mt-auto pt-2"
+              >Veja esta lenda ganhar vida com o app!</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/CACHORRO.jpeg') }}"
+              alt="Ilustração do Cachorrão da Furna"
+              class="card-img-top"
+            />
+            <h4 class="card-title">O Lobisomem do Barro Vermelho</h4>
+            <p class="card-text">
+              Lá no Barro Vermelho, num tempo bem antigo, o povo contava que um
+              lobisomem aparecia nas noites de lua cheia. Às vezes parecia um
+              cachorro enorme, outras vezes um porco esquisito. Mas ninguém
+              sabia direito o que era. Sempre que ele surgia, os cachorros da
+              vizinhança latiam sem parar, correndo atrás de alguma coisa que
+              ninguém via direito. Teve gente que viu um homem misterioso a
+              cavalo que sumia na sombra, outros ouviram vozes no rio pedindo
+              “Dá passagem?”. Mas o que todos diziam era o mesmo: ninguém
+              pegava, ninguém falava com ele... e quem via, nunca esquecia. Será
+              que ele ainda aparece por lá?.
+            </p>
+            <p class="reflenda">
+              Referência: ADANS FILHO, Nelson. História Torres Aspectos Vol I e
+              II. Porto Alegre: Editora Edigal, 2021, p. 169-170.
+            </p>
+            <small class="text-success fw-bold mt-auto pt-2"
+              >Veja esta lenda ganhar vida com o app!</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/Santa.png') }}"
+              alt="Ilustração da Mãe dos Homens"
+              class="card-img-top"
+            />
+            <h4 class="card-title">N. S. Mãe dos Homens</h4>
+            <p class="card-text">
+              Muitos e muitos anos atrás, um navio de corsários (aqueles
+              navegadores aventureiros!) navegava perto da costa de Araranguá,
+              quando uma grande tempestade apareceu e fez o navio encalhar na
+              barra do rio. Lá dentro, entre barris e cordas, havia algo muito
+              especial: uma imagem de uma santa. Mas ninguém ali sabia quem ela
+              era. Só sabiam que parecia uma mãe — e como só havia homens no
+              navio, o povo do lugar começou a chamá-la de “Mãe dos Homens”. Aos
+              poucos, aquela imagem passou a ser cuidada com carinho pela
+              comunidade. As pessoas faziam orações, levavam flores e pediam
+              proteção. Sentiam que aquela santa tinha escolhido ficar ali. Mais
+              tarde, um frei chamado Hilário descobriu que aquela imagem era, na
+              verdade, Santa Mônica, uma santa da Europa. Ela nem era destinada
+              para Araranguá — o destino certo seria Campinas, lá em São Paulo!
+              Mas já era tarde: o povo não quis deixá-la ir embora. E foi assim
+              que a Mãe dos Homens ficou. Com o tempo, tornou-se a padroeira de
+              Araranguá, protetora de quem vive, trabalha e sonha nessa terra
+              cheia de histórias. E até hoje, quando alguém olha para a igreja
+              ou para o céu e diz: — “Cuida de nós, Mãe dos Homens...” A fé da
+              cidade se renova, como naquela primeira vez, lá no rio, quando a
+              santa chegou.
+            </p>
+            <p class="reflenda">
+              Referência: ADANS FILHO, Nelson. História Torres Aspectos Vol I e
+              II. Porto Alegre: Editora Edigal, 2021, p. 169-170.
+            </p>
+            <small class="text-success fw-bold mt-auto pt-2"
+              >Veja esta lenda ganhar vida com o app!</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/Cobra.jpeg') }}"
+              alt="Ilustração da Cobra da Itoupava"
+              class="card-img-top"
+            />
+            <h4 class="card-title">A Cobra da Itoupava</h4>
+            <p class="card-text">
+              Muito, muito antes de existir cidade ou estrada, quando só havia
+              floresta e rio por todos os lados, antes mesmo da chegada dos
+              homens brancos, os primeiros povos, os nativos que viviam em
+              Araranguá contavam uma história misteriosa... Lá no Rio Itoupava,
+              vivia uma cobra gigantesca! Ela era tão grande que parecia fazer
+              parte do rio. Seus olhos brilhavam como fogo e seu corpo deslizava
+              pela água sem fazer barulho. Diziam que a cobra aparecia quando
+              alguém machucava os animais ou destruía a mata. Ela se levantava
+              das águas e corria pela floresta, assustando todos que não
+              respeitavam a natureza. Mas para quem cuidava do rio e vivia em
+              paz com os bichos, a cobra era só um sinal de que o rio estava
+              protegido. Até hoje, quando a água corre tranquila e a floresta
+              fica bem quieta, tem gente que diz: — “A Cobra da Itoupava ainda
+              mora por aqui... protegendo tudo em silêncio.”
+            </p>
+            <p class="reflenda">
+              Referência: ADANS FILHO, Nelson. História Torres Aspectos Vol I e
+              II. Porto Alegre: Editora Edigal, 2021, p. 169-170.
+            </p>
+            <small class="text-success fw-bold mt-auto pt-2"
+              >Veja esta lenda ganhar vida com o app!</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/DINOSSAURO.jpeg') }}"
+              alt="Ilustração dos Dinossauros"
+              class="card-img-top"
+            />
+            <h4 class="card-title">Vale dos Dinossauros</h4>
+            <p class="card-text">
+              Lendas e fato! Fato. Pegadas em Morro Pelado/Turvo, localizadas em
+              2010. Local faz parte da formação geológica Botucatu, Idade
+              JuroCretácio. Local Geossítio que integra integra Geoparque
+              Cânions do Sul. Informação registrada na Sociedade Brasileira de
+              Paleontologia, encontro anual de São Carlos/SP.
+            </p>
+            <p class="reflenda">
+              Referência: ADANS FILHO, Nelson. História Torres Aspectos Vol I e
+              II. Porto Alegre: Editora Edigal, 2021, p. 169-170.
+            </p>
+            <small class="text-success fw-bold mt-auto pt-2"
+              >Veja esta lenda ganhar vida com o app!</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

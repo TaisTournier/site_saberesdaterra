@@ -1,0 +1,9 @@
+# Ambientes Virtuais
+# Ignore a pasta do ambiente virtual, que armazena as dependências do projeto.
+# O nome da pasta pode variar (venv, .venv, env, etc.).
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/

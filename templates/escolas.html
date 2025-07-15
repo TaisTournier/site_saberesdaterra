@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Para Escolas - Saberes da Terra{% endblock %}
+
+{% block content %}
+<main class="backescolas">
+    <div class="content-section">
+    <div class="container">
+        <h1 class="text-center mb-3 display-5">Leve a Revolução Cultural e Tecnológica para a sua Sala de Aula</h1>
+        <p class="lead text-center mb-5 mx-auto" style="max-width: 800px;">O "Saberes da Terra" é mais que uma ferramenta; é um parceiro estratégico para escolas que buscam inovar e fortalecer sua conexão com a comunidade local.</p>
+    
+        <!-- SEÇÃO DE BENEFÍCIOS -->
+        <section class="my-5">
+            <h2>Benefícios para Toda a Comunidade Escolar</h2>
+            <div class="row g-4 mt-4 text-center">
+                <div class="col-lg-4"><div class="custom-card"><i class="bi bi-mortarboard-fill section-icon"></i><h4 class="card-title">Para Alunos</h4><p class="card-text">Aumento do engajamento com o conteúdo, desenvolvimento do senso de identidade e pertencimento, e um aprendizado muito mais lúdico e memorável.</p></div></div>
+                <div class="col-lg-4"><div class="custom-card"><i class="bi bi-person-video3 section-icon"></i><h4 class="card-title">Para Professores</h4><p class="card-text">Uma ferramenta inovadora alinhada à BNCC, com material de apoio completo que economiza tempo de planejamento e enriquece as aulas.</p></div></div>
+                <div class="col-lg-4"><div class="custom-card"><i class="bi bi-building-fill-gear section-icon"></i><h4 class="card-title">Para a Gestão Escolar</h4><p class="card-text">Posiciona a escola como uma instituição inovadora, fortalece os laços com as famílias e cumpre metas pedagógicas de forma criativa.</p></div></div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO DE IMPLEMENTAÇÃO -->
+        <section class="my-5 text-center" style="background-color: var(--earth-tone-card); padding: 4rem 2rem; border-radius: 8px;">
+            <h2>Como Implementar?</h2>
+            <p>Nossa parceria é simples e direta. Em poucos passos, sua escola pode fazer parte desta revolução.</p>
+            <div class="mt-4"><p><strong>1. Contato Inicial &rarr; 2. Apresentação &rarr; 3. Capacitação &rarr; 4. Implementação</strong></p></div>
+            <div class="text-center mt-5"><a href="{{ url_for('contato') }}" class="btn btn-custom-primary btn-lg">Agende uma apresentação</a></div>
+        </section>
+    </div>
+    </div>
+</main>
+{% endblock %}

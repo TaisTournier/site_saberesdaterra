@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}A Solução - Saberes da Terra{% endblock %}
+
+{% block content %}
+<main class="backsolucao">
+    <div class="content-section">
+    <div class="container">
+        <h1 class="text-center mb-3 display-5">Tecnologia e Tradição de Mãos Dadas</h1>
+        <p class="lead text-center mb-5 mx-auto" style="max-width: 700px;">Veja como nossa plataforma transforma a educação e o engajamento cultural em Araranguá.</p>
+
+        <!-- VÍDEO DE DEMONSTRAÇÃO -->
+        <section id="demo-video" class="my-5">
+            <div class="ratio ratio-16x9" style="border-radius: 8px; overflow: hidden;"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Yx9bE3a8P5r4S2" title="Vídeo Pitch do Saberes da Terra" allowfullscreen></iframe></div>
+            <p class="text-center mt-3 text-secondary fst-italic">Assista ao nosso pitch de 2 minutos para entender o impacto do projeto.</p>
+        </section>
+
+        <!-- RECURSOS DA PLATAFORMA -->
+        <section id="recursos" class="my-5">
+            <h2 class="mt-5">Recursos da Plataforma</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6"><div class="d-flex custom-card p-4"><i class="bi bi-book-fill fs-2 text-success me-4"></i><div><h4>Biblioteca de Lendas em RA</h4><p>Um acervo crescente de lendas locais que ganham vida na tela do celular ou tablet, com animações e narrações imersivas.</p></div></div></div>
+                <div class="col-md-6"><div class="d-flex custom-card p-4"><i class="bi bi-map-fill fs-2 text-success me-4"></i><div><h4>Mapa Interativo da Cidade</h4><p>Guie os usuários a pontos históricos reais de Araranguá onde as lendas "acontecem", conectando o digital ao mundo físico.</p></div></div></div>
+                <div class="col-md-6"><div class="d-flex custom-card p-4"><i class="bi bi-easel-fill fs-2 text-success me-4"></i><div><h4>Material de Apoio para Professores</h4><p>Planos de aula, atividades e guias para integrar o conteúdo à matriz curricular da BNCC de forma simples e eficaz.</p></div></div></div>
+                <div class="col-md-6"><div class="d-flex custom-card p-4"><i class="bi bi-trophy-fill fs-2 text-success me-4"></i><div><h4>Gamificação e Recompensas</h4><p>As crianças ganham pontos e medalhas virtuais ao descobrir novas lendas e completar atividades, incentivando a exploração contínua.</p></div></div></div>
+            </div>
+        </section>
+    </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,204 @@
+{% extends "base.html" %} {% block title %}Início - Saberes da Terra{% endblock
+%} {% block content %}
+<main class="backindex">
+  <!-- SEÇÃO HERÓI -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <img
+              src="{{ url_for('static', filename='img/Logo.png') }}"
+              alt="Logo Saberes da Terra"
+              class="card-img-top"
+              style="width: 400px; margin-top: 100px;"
+            />
+        <h3>
+          Chega de Princesas estrangeiras e Castelos distantes<br/>É hora de
+          contar as nossas lendas
+        </h3>
+        <p class="lead">
+          Saberes da Terra é a plataforma inovadora que usa Realidade Aumentada
+          para conectar as crianças de Araranguá à riqueza da sua própria
+          cultura.
+        </p>
+        <a href="#solucao" class="btn btn-custom-primary btn-lg"
+          >Veja a Magia Acontecer</a
+        >
+        <a
+          href="{{ url_for('escolas') }}"
+          class="btn btn-custom-secondary btn-lg"
+          >Para Escolas</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PROBLEMA/SOLUÇÃO -->
+  <section class="content-section">
+    <div class="container text-center">
+      <h2>A Tecnologia Conectando Você a sua História!</h2>
+      <div class="row mt-5 align-items-center">
+        <div class="col-md-5">
+          <i class="bi bi-book-half section-icon"></i>
+          <h4>O Problema</h4>
+          <p>
+            Nossas crianças crescem aprendendo sobre castelos distantes,
+            enquanto as lendas da nossa terra são esquecidas. Isso enfraquece
+            nossa identidade cultural e o orgulho de pertencer à nossa cidade.
+          </p>
+        </div>
+        <div class="col-md-2 d-none d-md-block">
+          <i class="bi bi-arrow-right-circle-fill fs-1 text-white"></i>
+        </div>
+        <div class="col-md-5">
+          <i class="bi bi-phone-vibrate-fill section-icon"></i>
+          <h4>A Solução</h4>
+          <p>
+            Nós transformamos o patrimônio de Araranguá em uma experiência
+            interativa e divertida, fortalecendo o orgulho de pertencer à nossa
+            comunidade através da tecnologia que as crianças já amam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO COMO FUNCIONA -->
+  <section
+    id="solucao"
+    class="content-section"
+    style="background-color: #000000f2;"
+  >
+    <div class="container">
+      <h2 class="mb-5">Descobrir nossa cultura nunca foi tão fácil</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="p-4">
+            <i class="bi bi-camera section-icon"></i>
+            <h3>1. Aponte a Câmera</h3>
+            <p>
+              Use o aplicativo Saberes da Terra em nossos materiais didáticos ou
+              em pontos históricos da cidade.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4">
+            <i class="bi bi-stars section-icon"></i>
+            <h3>2. Revele a Lenda</h3>
+            <p>
+              Veja personagens como o Boitatá e a Cobra da Itoupava ganharem
+              vida em Realidade Aumentada.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4">
+            <i class="bi bi-award-fill section-icon"></i>
+            <h3>3. Aprenda e Encante-se</h3>
+            <p>
+              Mergulhe em histórias, jogos e atividades que ensinam sobre a
+              nossa gente e o nosso lugar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO LENDAS EM DESTAQUE -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="mb-5">Lendas do Grande Araranguá</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/Boitatá.png') }}"
+              alt="Ilustração do Boitatá"
+              class="card-img-top"
+            />
+            <h4 class="card-title">O Boitatá</h4>
+            <p class="card-text">
+              Passarinho muito grande, vinha do farol no Morro dos Conventos,
+              sem fazer barulho nenhum, e de repente soltava fogo.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/CACHORRO.jpeg') }}"
+              alt="Ilustração do Cachorrão da Furna"
+              class="card-img-top"
+            />
+            <h4 class="card-title">O Lobisomem do Barro Vermelho</h4>
+            <p class="card-text">
+              Lá no Barro Vermelho, num tempo bem antigo, o povo contava que um
+              lobisomem aparecia nas noites de lua cheia.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="custom-card">
+            <img
+              src="{{ url_for('static', filename='img/DINOSSAURO.jpeg') }}"
+              alt="Ilustração dos Dinossauros"
+              class="card-img-top"
+            />
+            <h4 class="card-title">Vale dos Dinossauros</h4>
+            <p class="card-text">
+              Lendas e fato! Fato. Pegadas em Morro Pelado/Turvo, localizadas em
+              2010. Local faz parte da formação geológica Botucatu, Idade
+              JuroCretácio. Local Geossítio que integra integra Geoparque
+              Cânions do Sul. Informação registrada na Sociedade Brasileira de
+              Paleontologia, encontro anual de São Carlos/SP.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="{{ url_for('lendas') }}" class="btn btn-custom-primary"
+          >Explorar todas as lendas</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PROVA SOCIAL -->
+  <section class="testimonial-section content-section" style="background-color: #000000f2;;">
+    <div class="container">
+      <h2 class="mb-5">
+        Um projeto feito para Araranguá, com a parceria da Prefeitura Municipal
+        e a UFSC.
+      </h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <div class="testimonial">
+            <blockquote class="mb-4">
+              "O 'Saberes da Terra' é uma iniciativa fundamental para a
+              valorização da nossa cultura e para a implementação de tecnologias
+              alinhadas à BNCC em sala de aula."
+            </blockquote>
+            <p class="testimonial-author mb-0">[Nome Fictício]</p>
+            <p class="text-secondary">
+              Coordenador(a) Pedagógico(a) de Araranguá
+            </p>
+          </div>
+          <div class="mt-5">
+            <img
+              src="https://placehold.co/200x80/FFFFFF/000000?text=Logo+Prefeitura"
+              alt="Logo da Prefeitura de Araranguá"
+              class="mx-3"
+            /><img
+              src="https://placehold.co/200x80/FFFFFF/000000?text=Logo+Educação"
+              alt="Logo da Secretaria de Educação"
+              class="mx-3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

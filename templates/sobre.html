@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}O Projeto - Saberes da Terra{% endblock %}
+
+{% block content %}
+<main class="backsobre">
+    <div class="content-section">
+    <div class="container">
+        <h1 class="text-center mb-5 display-4">Nossa missão é reconectar</br>Araranguá com suas raízes.</h1>
+        
+        <section id="missao" class="my-5">
+            <h2>Nossa Missão</h2>
+            <p>Resgatar, preservar e difundir o patrimônio cultural imaterial de Araranguá para as novas gerações. Utilizamos a tecnologia como uma ponte entre o passado e o futuro, transformando o aprendizado sobre a história local em uma aventura emocionante e significativa, fortalecendo o senso de identidade e pertencimento na comunidade.</p>
+        </section>
+
+        <section id="problema" class="my-5">
+            <h2>O Problema em Detalhes</h2>
+            <p>O afastamento cultural é uma realidade. Muitas vezes, nossas crianças conhecem mais sobre culturas distantes do que sobre os heróis e contos da sua própria terra. O investimento de mais de <strong class="text-white">R$ 1 milhão em conteúdos estrangeiros pelo município</strong>, embora importante, revela uma lacuna que precisa ser preenchida com produções locais. É essa lacuna que o "Saberes da Terra" se propõe a fechar, gerando identidade, pertencimento e valorizando o que é nosso.</p>
+        </section>
+
+        <section id="solucao-inovadora" class="my-5">
+            <h2>A Nossa Solução Inovadora</h2>
+            <p>Nossa plataforma não é apenas um aplicativo. É um ecossistema de aprendizado completo que une três pilares fundamentais:</p>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4"><div class="custom-card"><h4 class="card-title">Realidade Aumentada</h4><p class="card-text">Damos vida às lendas, permitindo que as crianças interajam com personagens históricos em seu próprio ambiente.</p></div></div>
+                <div class="col-md-4"><div class="custom-card"><h4 class="card-title">Storytelling Local</h4><p class="card-text">Criamos narrativas cativantes que resgatam as histórias contadas por nossos avós, adaptadas para o público infantil.</p></div></div>
+                <div class="col-md-4"><div class="custom-card"><h4 class="card-title">Material Pedagógico</h4><p class="card-text">Oferecemos planos de aula e atividades alinhados à BNCC, facilitando o trabalho dos professores em sala de aula.</p></div></div>
+            </div>
+        </section>
+
+        <section id="equipe" class="my-5">
+            <h2>Nossa Equipe</h2>
+            <p class="text-center">Conheça a equipe dos Saberes da Terra.</p>
+             <div class="row g-4 justify-content-center mt-4">
+                <!-- Repetir este bloco para cada membro da equipe -->
+                <div class="col-lg-3 col-md-4"> <a class="asublinhado" target="_blank" href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2700138U4&tokenCaptchar=03AFcWeA55ikXiIXl2ZCrPAFAneS71bZ8ziqwiD3yZT_j8hJVk9jXdO9JVXNkorXjzAPmwhOyl7QdRRzQiJB3WYn5Z-AZP5hqaL0m6OjEB-2IEgJ0YMHmF2LlNTC8DqHlnDhJStoDdwqWVnFia06PrUBaKlOxGtBY_uinRVjOIrrlVRJQidBka33zuxVWm4mR3zykNCUf972WeRK2NBq19M5xt8BQuuzRy7eYahaSAze_X3mc55a7HEpT1-1dE02Z5NnVxWiggoYWTa6XTn8ShsFuOgKBCTI-WzfQVDOSXr4_Fl2ECzwoP8g0-wT2kYa7NBl5NllJ18-FjZMgcBOg_erOJkRNxeqYN1Yg5nBaQKR8eaEembvsmVUFJBeBBDYEl-zdeRw0yG7bXN9gKX8xtDMQAgQY3aXtHgxQPq2Z0-6Lx54k4_kIIqw0lWJHHLfLBerTX2HlVPxawv-w-vTlSTwrLr4zQq9FuHMSsjI0_DJwlCldr8LNncPdxrQBTsb-kfsiFdja9DBEC5pdiiihfDbChcPKAC8jlB7hv8Vds2bymAGC9t5MZejCCQf03IqrrjFFCko8mh1d4OjuR1H9Nj2kwr9iNHegkq-T-HkbHzPXeSjsH3D8tTKiOCO3p1YUqtAk-G-9BMl1GptGAfRz9I0w3MIsJfU0sBJqAsc3vsJsHVU67L2NpY437wR-_D0lpHRYYpx775zwzqOV5EjHuh6Az9xjZHyBdu6pntI3bQhCc_3gHNj8yoOmBE25cgSIcBzdgMGeoI9Us-snJPCNFrtGP0e6vJvnnO-K_GSwA8Ge7vaEceT0FdA5uE1BCaoN8D36OwdwCHysbN30fIa45IJvVFB2NMD0Fia3xwcJQNc6RxsEthblcBq0SuoF7PpKQOY1DafA6-PCavxZ25gJwPwXOuUI8tR6plKpvDpUzYQk6VS6zQLQkGbZsMl4v-BlEWmhUk5O0B4bsAguasT2Xl02nVNAfIN2B-SWvj3rOE1ByMaXnii_B30gH6lR9H7ZVZYGh1x2jXy019hJHmEtMeuMHRqKG9xQNbA"><div class="custom-card"><img src="{{ url_for('static', filename='img/Logo.png') }}" alt="Foto do Membro da Equipe" class="card-img-top rounded-circle"><h5 class="card-title mt-3">Ma. Taís Tournier Brusarosco</h5><p class="text-secondary">Idealizadora, Desenvolvedora e Historiadora RP 97-SC</p></div></a></div>
+                <div class="col-lg-3 col-md-4"><div class="custom-card"><img src="{{ url_for('static', filename='img/Logo.png') }}" alt="Foto do Membro da Equipe" class="card-img-top rounded-circle"><h5 class="card-title mt-3">Nelson Adams Filho</h5><p class="text-secondary">Historiador/Membro do IHGSC/RP 825-RS</p></div></div>
+                <div class="col-lg-3 col-md-4"><div class="custom-card"><img src="{{ url_for('static', filename='img/Logo.png') }}" alt="Foto do Membro da Equipe" class="card-img-top rounded-circle"><h5 class="card-title mt-3">[Nome do Membro]</h5><p class="text-secondary">[Papel no Projeto]</p></div></div>
+             </div>
+        </section>
+    </div>
+    </div>
+</main>
+{% endblock %}
