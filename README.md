@@ -1,6 +1,5 @@
-=======================
 Saberes da Terra
-=======================
+=====
 
 Bem-vindo ao repositório do projeto "Saberes da Terra". Este arquivo fornece todas as instruções necessárias para instalar e executar a aplicação em um ambiente de desenvolvimento local.
 
